@@ -1,0 +1,117 @@
+.about-main {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-main {
+    margin-top: 100px;
+    height: 80vh;
+  }
+}
+
+.about-main .container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .about-main .container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.about-main .container .info {
+  -webkit-box-flex: 1/2;
+      -ms-flex: 1/2;
+          flex: 1/2;
+  max-width: 500px;
+  line-height: 2em;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-main .container .info {
+    font-size: 0.7rem;
+  }
+  .about-main .container .info p {
+    font-size: 1rem;
+  }
+}
+
+.about-main .container .info span {
+  background-color: #ee5100;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.193);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.193);
+}
+
+.about-main .container .info .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.about-main .container .info .skill li {
+  color: #ee4f00;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-main .container .info .skill li {
+    font-size: 0.8rem;
+  }
+}
+
+.about-main .container .image img {
+  width: 100%;
+  min-width: 200px;
+  max-width: 500px;
+  -webkit-box-shadow: 10px 0 10px #383838;
+          box-shadow: 10px 0 10px #383838;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.about-main .container .image img:hover {
+  -webkit-box-shadow: 10px 0 15px #5f5f5f;
+          box-shadow: 10px 0 15px #5f5f5f;
+}
+
+@media (max-width: 768px) {
+  .about-main .container .image img {
+    width: 80%;
+    border-radius: 10px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

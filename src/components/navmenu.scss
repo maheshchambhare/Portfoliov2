@@ -1,0 +1,100 @@
+.navbar {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	// right: 300px;
+	width: 100%;
+	height: 100px;
+	padding: 1rem 0;
+	background-color: #131313;
+
+	@media (max-width: 768px) {
+		padding: 0 0;
+		right: 0px;
+		width: 100%;
+		height: 0px;
+	}
+
+	ul {
+		max-width: 1500px;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		background-color: transparent;
+
+		li {
+			display: inline-block;
+			background-color: transparent;
+			transition: 0.5s ease background-color;
+			:hover {
+				border-radius: 8px;
+				transition: 0.3s ease-in-out background-color;
+				background-color: rgb(29, 29, 29);
+			}
+		}
+		a {
+			display: inline-block;
+			padding: 1rem 2rem;
+			font-size: 1.5rem;
+			outline: none;
+			text-decoration: none;
+			color: gray;
+			background-color: transparent;
+		}
+		.active {
+			color: rgb(255, 255, 255);
+		}
+	}
+	.mobile-menu-icon {
+		position: absolute;
+		right: 2rem;
+		top: 1rem;
+		cursor: pointer;
+		display: none;
+		outline: none;
+		// background-color: chartreuse;
+	}
+
+	.closeNavIcon {
+		display: none;
+		cursor: pointer;
+		position: absolute;
+		right: 2rem;
+		top: 1rem;
+		outline: none;
+		z-index: 105;
+		// cursor: pointer;
+	}
+
+	@media (max-width: 768px) {
+		.mobile-menu-icon {
+			display: block;
+		}
+		.navitems {
+			transition: 0.3s ease transform;
+			// margin-top: 50px;
+			display: flex;
+			top: 0;
+			flex-direction: column;
+			padding: 0;
+			z-index: 100;
+			height: 100vh;
+			width: 100%;
+			background-color: rgb(41, 41, 41);
+
+			li {
+				padding: 20px;
+				background-color: rgb(41, 41, 41);
+
+				a {
+					background-color: rgb(41, 41, 41);
+				}
+			}
+		}
+		.closeNavIcon {
+			display: block;
+			background-color: rgb(41, 41, 41);
+			// outline: none;
+		}
+	}
+}

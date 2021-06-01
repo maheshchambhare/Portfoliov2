@@ -1,0 +1,55 @@
+.container {
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container .main-container {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+
+.container .main-container .info {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .container .main-container .info {
+    width: 80%;
+  }
+}
+
+.container .main-container .info p {
+  text-align: left;
+  line-height: 2rem;
+}
+
+.container .main-container .info p span {
+  background-color: #ee5100;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.193);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.193);
+}
+
+.container .main-container .info .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .container .main-container .info .buttons {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=projects.css.map */
