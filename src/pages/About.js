@@ -79,6 +79,7 @@ export default function About() {
                             <li>JavaScript</li>
                             <li>HTML</li>
                             <li>CSS</li>
+                            <li>SCSS</li>
                             <li>Figma</li>
                             <li>Node</li>
                             <li>Firebase</li>
